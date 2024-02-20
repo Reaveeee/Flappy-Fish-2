@@ -133,10 +133,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waterBall: {fileID: 5785885193059867783, guid: 452a61d69673d1a428ed167f13b52e5a, type: 3}
-  enemy: {fileID: 0}
-  waterBallParent: {fileID: 0}
   fishNormal: {fileID: 1204051219, guid: 51e2e451b03ad6749a50b89aa48c5b40, type: 3}
   fishFlapping: {fileID: -1188219695, guid: 51e2e451b03ad6749a50b89aa48c5b40, type: 3}
+  enemy: {fileID: 0}
   timer: 0
   shootForce: 3
   cooldown: 5
@@ -275,7 +274,8 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 6401256882311436933, guid: 452a61d69673d1a428ed167f13b52e5a, type: 3}
     - {fileID: 8423253557685263110, guid: 452a61d69673d1a428ed167f13b52e5a, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4125787959345256140, guid: 452a61d69673d1a428ed167f13b52e5a, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 452a61d69673d1a428ed167f13b52e5a, type: 3}

@@ -91,6 +91,14 @@ public class Fish : MonoBehaviour
     void Shoot()
     {
         shotWaterBall = Instantiate(waterBall, this.gameObject.transform.position + new Vector3(spawnOffset, 0, 0), Quaternion.Euler(0, 0, 0));
+        if(gameObject.name == "FishRight")
+        {
+            shotWaterBall.transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+        else
+        {
+            shotWaterBall.transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
         shotWaterBall.GetComponent<Rigidbody2D>().velocity = shootVelocity * shootForce;
         shotWaterBall.GetComponent<WaterBall>().owner = this.gameObject.name;
     }
