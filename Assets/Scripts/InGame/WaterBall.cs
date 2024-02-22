@@ -11,6 +11,7 @@ public class WaterBall : MonoBehaviour
     private void Start()
     {
         GetFishEvents();
+        changeDark();
     }
     void Update()
     {
@@ -31,5 +32,16 @@ public class WaterBall : MonoBehaviour
     void Delete(GameObject ignore, GameObject ignore2)
     {
         Destroy(this.gameObject);
+    }
+
+    void changeDark()
+    {
+        LeanTween.color(gameObject, Color.blue, 1f);
+        Invoke("changeBright", 1f);
+    }
+    void changeBright()
+    {
+        LeanTween.color(gameObject, Color.white, 1f);
+        Invoke("changeDark", 1f);
     }
 }

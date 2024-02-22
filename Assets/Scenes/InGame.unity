@@ -321,7 +321,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShootIndicator
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3564705252086681139, guid: ed0898244c8e5f64cbf1d03f6ce4904b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -450,7 +451,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1952510297}
         m_TargetAssemblyTypeName: GameOverScreen, Assembly-CSharp
-        m_MethodName: LoadMainMenu
+        m_MethodName: Restart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -984,6 +985,8 @@ GameObject:
   - component: {fileID: 2122573103}
   - component: {fileID: 2122573102}
   - component: {fileID: 2122573101}
+  - component: {fileID: 2122573105}
+  - component: {fileID: 2122573106}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1074,6 +1077,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2122573105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122573100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 054e8a08b43cd4248bfbccc919a9b42a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2122573106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122573100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 054e8a08b43cd4248bfbccc919a9b42a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4358199051351014978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1150,7 +1177,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShootIndicator
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3564705252086681139, guid: ed0898244c8e5f64cbf1d03f6ce4904b, type: 3}
     m_RemovedGameObjects:
     - {fileID: 3739675632309901674, guid: ed0898244c8e5f64cbf1d03f6ce4904b, type: 3}
     m_AddedGameObjects: []

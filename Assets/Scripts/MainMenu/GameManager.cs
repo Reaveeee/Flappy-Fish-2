@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
         
     }
 
-    void DelayedStart()
+    public void DelayedStart()
     {
         Invoke("GetFishEvents", 1);
     }

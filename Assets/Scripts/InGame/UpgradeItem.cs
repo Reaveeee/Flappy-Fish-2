@@ -5,6 +5,7 @@ using UnityEngine;
 public class UpgradeItem : MonoBehaviour
 {
     GameObject fishToUpgrade;
+    [SerializeField] GameObject deleteParticles;
     Fish fish1;
     Fish fish2;
 
@@ -41,6 +42,7 @@ public class UpgradeItem : MonoBehaviour
                     fishToUpgrade.GetComponent<Fish>().shootForce *= 1.2f;
                     break;
             }
+            Instantiate(deleteParticles, transform.position, deleteParticles.transform.rotation);
             Destroy(this.gameObject);
         }
     }

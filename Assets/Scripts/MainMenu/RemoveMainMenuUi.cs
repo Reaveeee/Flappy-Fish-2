@@ -31,6 +31,6 @@ public class RemoveMainMenuUi : MonoBehaviour
 
     void destoy()
     {
-        Destroy(this.gameObject);
+        Destroy(GameObject.Find("Canvas"));
     }
 }
